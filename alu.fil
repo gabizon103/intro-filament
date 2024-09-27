@@ -1,0 +1,21 @@
+import "primitives/comb.fil";
+import "primitives/math/math.fil";
+import "primitives/state.fil";
+
+comp main<'G:1>(
+    go: interface['G],
+    in0: ['G, 'G+1] 32,
+    in1: ['G, 'G+1] 32,
+    opsel: ['G+3, 'G+4] 1
+) -> (
+    out: ['G+3, 'G+4] 32
+) {
+    add := new Add[32]<'G>(in0, in1);
+    r0 := new Register[32]<'G, 'G+2>(add.out);
+    r1 := new Register[32]<'G+1, 'G+3>(r0.out);
+    r2 := new Register[32]<'G+2, 'G+4>(r1.out);
+
+    mult := new FastMult[32]<'G>(in0, in1);
+    mux := new Mux[32]<'G+3>(opsel, r2.out, mult.out);
+    out = mux.out;
+}

@@ -1,0 +1,183 @@
+$date
+	Fri Sep 27 13:21:42 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 32 ! out [31:0] $end
+$var reg 1 " clk $end
+$var reg 32 # in0 [31:0] $end
+$var reg 32 $ in1 [31:0] $end
+$var reg 1 % opsel $end
+$var reg 1 & reset $end
+$scope module my_alu $end
+$var wire 1 " clk $end
+$var wire 32 ' in0 [31:0] $end
+$var wire 32 ( in1 [31:0] $end
+$var wire 1 % opsel $end
+$var wire 1 & reset $end
+$var wire 32 ) out [31:0] $end
+$var wire 32 * mult_result [31:0] $end
+$var wire 32 + add_s0 [31:0] $end
+$var reg 32 , add_result [31:0] $end
+$var reg 32 - add_s1 [31:0] $end
+$var reg 32 . add_s2 [31:0] $end
+$var reg 32 / add_s3 [31:0] $end
+$scope module multiplier $end
+$var wire 1 " clk $end
+$var wire 32 0 in0 [31:0] $end
+$var wire 32 1 in1 [31:0] $end
+$var wire 32 2 out [31:0] $end
+$var wire 1 & reset $end
+$var reg 32 3 mult_s1 [31:0] $end
+$var reg 32 4 mult_s2 [31:0] $end
+$var reg 32 5 mult_s3 [31:0] $end
+$var reg 32 6 mult_s4 [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+1&
+x%
+bx $
+bx #
+1"
+bx !
+$end
+#5
+0"
+#10
+b0 *
+b0 2
+b0 6
+b0 5
+b0 4
+b0 3
+bx ,
+bx /
+bx .
+bx -
+1"
+#11
+1%
+b110 +
+b100 $
+b100 (
+b100 1
+b10 #
+b10 '
+b10 0
+0&
+#15
+0"
+#20
+b110 -
+b1000 3
+1"
+#25
+0"
+#30
+b1000 4
+b110 .
+1"
+#35
+0"
+#40
+b110 /
+b1000 5
+1"
+#45
+0"
+#50
+b110 !
+b110 )
+b1000 *
+b1000 2
+b1000 6
+b110 ,
+1"
+#51
+1&
+#55
+0"
+#60
+b110 ,
+b110 /
+b110 .
+b110 -
+b0 *
+b0 2
+b0 6
+b0 5
+b0 4
+b0 3
+1"
+#61
+b0 !
+b0 )
+0%
+0&
+#65
+0"
+#70
+b1000 3
+1"
+#71
+bx $
+bx (
+bx 1
+bx +
+bx #
+bx '
+bx 0
+#75
+0"
+#80
+bx -
+b1000 4
+bx 3
+1"
+#85
+0"
+#90
+b1000 5
+bx 4
+bx .
+1"
+#95
+0"
+#100
+b1000 !
+b1000 )
+bx /
+b1000 *
+b1000 2
+b1000 6
+bx 5
+1"
+#101
